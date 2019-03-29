@@ -1,0 +1,49 @@
+.city-component {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.weather-container {
+	display: flex;
+	flex-direction: row;
+	padding: 1rem;
+	flex-wrap: wrap;
+}
+
+.weather {
+	padding: 2rem;
+}
+
+.weather-span {
+	font-weight: bold;
+}
+
+.city-coordinates {
+	font-weight: bold;
+}
+
+.city-details__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.temperature-span {
+	font-weight: bold;
+}
+
+.back-button {
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 2.5rem;
+	width: 6rem;
+	background: #4286f4;
+	color: white;
+	text-decoration: none;
+
+}

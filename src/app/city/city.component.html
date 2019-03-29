@@ -1,0 +1,47 @@
+<div class="city-component">
+	<h2 class="city-title">{{location.title}}</h2>
+	<div class="city-details__container">
+		<p class="city-coordinates">Location coordinates: {{location.latt_long}}</p>
+		<a routerLink="/" class="back-button">
+		<span class="city">Back</span>
+	</a>
+		<div class="weather-container">
+			<div class="weather" *ngFor="let weather of getWeather()">
+				<img 
+					src={{getSrc(weather.weather_state_abbr)}}>
+				<p class="weather-date">
+					<span class="weather-span">date of forecast:</span>
+					{{weather.applicable_date}}
+				</p>
+				<p class="weather-temperature">
+					<span class="weather-span">weather state:</span>
+					{{weather.weather_state_name}}
+				</p>
+				<p class="weather-temperature">
+					<span class="weather-span">maximum temperature:</span>
+					{{weather.max_temp}}F
+				</p>
+				<p class="weather-temperature">
+					<span class="weather-span">minimum temperature:</span>
+					{{weather.min_temp}}F
+				</p>
+				<p class="weather-temperature">
+					<span class="weather-span">humidity:</span>
+					{{weather.humidity}}%
+				</p>
+				<p class="weather-temperature">
+					<span class="weather-span">predictability:</span>
+					{{weather.predictability}}%
+				</p>
+				<p class="weather-temperature">
+					<span class="weather-span">wind speed:</span>
+					{{this.round(weather.wind_speed)}}km/h
+				</p>
+				<p class="weather-temperature">
+					<span class="weather-span">wind direction:</span>
+					{{weather.wind_direction_compass}}
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

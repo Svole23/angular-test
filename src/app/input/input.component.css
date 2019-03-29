@@ -1,0 +1,55 @@
+.app-input {
+	display: flex;
+	flex-direction: column;
+	padding: 6rem 20% 1rem 20%;
+	justify-content: center;
+	align-items: center;
+}
+
+.input {
+	height: 2rem;
+	width: 100%;
+	padding-left: 0.5rem;
+}
+
+.btn {
+	width: 30%;
+	height: 3rem;
+	background: #4286f4;
+	margin-top: 2rem;
+	border: none;
+	color: white;
+	font-size: 21px;
+}
+
+.message {
+	margin: 0;
+	padding-top: 1rem;
+	font-size: 21px;
+}
+
+.results-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.city-container {
+	margin: 1rem;
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #4286f4;
+	text-decoration: none;
+}
+
+.city {
+	color: white;
+	width: auto;
+	min-width: 8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

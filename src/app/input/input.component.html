@@ -1,0 +1,10 @@
+<div class="app-input">
+	<input placeholder="Search locations..." type="text" class="input" (focusout)="getValue($event)">
+	<button (click)="onClick()" class="btn">Search</button>
+	<p class="message" [innerHTML]="message"></p>
+	<div class="results-container">
+	<a routerLink="/city/{{city.title}}" class="city-container" *ngFor="let city of result">
+		<span class="city">{{city.title}}</span>
+	</a>
+	</div>
+</div>
